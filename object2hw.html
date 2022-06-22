@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nested Object</title>
+</head>
+<body>
+    <!-- Nested objects are the objects that are inside an another object.
+    In the following example 'person2' is a object which is inside a
+    main object called 'Employees'. Using dot notation the nested objects' property (Name) is accessed. -->
+    <script>
+        var Employees = {Person1: {
+            Nam: "Ali",
+            Age: 22,
+            Email: "Ali123@gmail.com",
+            Salary: 69000},
+            Person2: {
+            Nam: "Fatima",
+            Age: 20,
+            Email: "Fati@gmail.com",
+            Salary: 71000
+            },
+            person3: {
+            Nam: "Muneeb",
+            Age: 27,
+            Email: "Muneebishere@gmail.com",
+            Salary: 73000
+            }
+        }
+        for(a in Employees){
+            document.write("The employee name is " + Employees[a].Nam + " " + "their age is " + Employees[a].Age + " " + "email is " + Employees[a].Email + " " + "and the salary is " + Employees[a].Salary + "<br>")
+        }
+    </script>
+</body>
+</html>
